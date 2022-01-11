@@ -1,6 +1,6 @@
 {
   "name": "@stacktrace/reactive-url",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utility classes for building reactive urls.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,10 +10,17 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
-    "version": "npm run format && git add -A src",
+    "version": "git add -A src",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test",
     "postversion": "git push && git push --tags"
   },
-  "keywords": ["vue", "inertia", "reactive-url", "url"],
+  "keywords": [
+    "vue",
+    "inertia",
+    "reactive-url",
+    "url"
+  ],
   "author": "Peter Stovka",
   "license": "MIT",
   "devDependencies": {

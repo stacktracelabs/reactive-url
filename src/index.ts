@@ -200,6 +200,13 @@ export class ReactiveUrl {
 
 }
 
+/**
+ * Creates instance of ReactiveUrl.
+ * 
+ * @param filterable
+ * @param onQueryChange
+ * @param filterKeys
+ */
 export const createReactiveUrl = (
     filterable: RawQuery,
     onQueryChange: QueryChangeCallback,
