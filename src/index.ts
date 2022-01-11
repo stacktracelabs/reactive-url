@@ -202,7 +202,7 @@ export class ReactiveUrl {
 
 /**
  * Creates instance of ReactiveUrl.
- * 
+ *
  * @param filterable
  * @param onQueryChange
  * @param filterKeys
@@ -218,6 +218,7 @@ export const createReactiveUrl = (
             new UrlSearchParams(new URLSearchParams(window.location.search)),
             filterKeys === null ? Object.keys(filterable) : filterKeys
         ),
+        onQueryChange,
     )
 }
 
