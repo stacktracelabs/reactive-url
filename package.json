@@ -1,5 +1,5 @@
 {
-  "name": "@stacktracelabs/reactive-url",
+  "name": "@stacktrace/reactive-url",
   "version": "0.1.0",
   "description": "Utility classes for building reactive urls.",
   "main": "lib/index.js",
